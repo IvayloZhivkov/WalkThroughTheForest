@@ -42,10 +42,6 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
 
-        if (Input.GetButton("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jump * -2f * gravity);
-        }
-        characterController.Move(velocity * Time.deltaTime);
+        
     }
 }
