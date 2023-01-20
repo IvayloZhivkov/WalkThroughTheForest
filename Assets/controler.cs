@@ -10,9 +10,12 @@ public class controler : MonoBehaviour
     public float speedh=2.0f;
     public float speedv = 2.0f;
     public KeyCode lookKey;
+    public Transform entity;
 
     private float yaw = 0.0f;
     private float pitch = 0.0f;
+
+  
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -30,6 +33,5 @@ public class controler : MonoBehaviour
 
             transform.eulerAngles = new Vector3(pitch, yaw, 0.0f);
         }
-         
     }
 }

@@ -34,8 +34,7 @@ public class BicycleVehicle : MonoBehaviour
 	[SerializeField] Transform frontWheeltransform;
 	[SerializeField] Transform backWheeltransform;
 
-	[SerializeField] TrailRenderer fronttrail;
-	[SerializeField] TrailRenderer rearttrail;
+	
 
 	public bool frontGrounded;
 	public bool rearGrounded;
@@ -43,7 +42,7 @@ public class BicycleVehicle : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
-		StopEmitTrail();
+		//StopEmitTrail();
 		rb = GetComponent<Rigidbody>();		
 	}
 
@@ -57,7 +56,7 @@ public class BicycleVehicle : MonoBehaviour
 		UpdateHandle();
 		LayOnTurn();
 		DownPresureOnSpeed();
-		EmitTrail();
+		//EmitTrail();
 	}
 
 	public void GetInput()
@@ -177,37 +176,37 @@ public class BicycleVehicle : MonoBehaviour
 		handle.localRotation = Quaternion.Euler(handle.localRotation.eulerAngles.x, currentSteeringAngle, handle.localRotation.eulerAngles.z);
 	}
 
-	private void EmitTrail() 
-	{	
-		frontGrounded = frontWheel.GetGroundHit(out WheelHit Fhit);
-		rearGrounded = backWheel.GetGroundHit(out WheelHit Rhit);
+	//private void EmitTrail() 
+	//{	
+	//	frontGrounded = frontWheel.GetGroundHit(out WheelHit Fhit);
+	//	rearGrounded = backWheel.GetGroundHit(out WheelHit Rhit);
 
-		if (frontGrounded)
-		{
-			fronttrail.emitting = true;
-		}
-		else
-		{
-			fronttrail.emitting = false;
-		}
+	//	if (frontGrounded)
+	//	{
+	//		fronttrail.emitting = true;
+	//	}
+	//	else
+	//	{
+	//		fronttrail.emitting = false;
+	//	}
 
-		if (rearGrounded)
-		{
-			rearttrail.emitting = true;			
-		}
-		else
-		{
-			rearttrail.emitting = false;
-		}
+	//	if (rearGrounded)
+	//	{
+	//		rearttrail.emitting = true;			
+	//	}
+	//	else
+	//	{
+	//		rearttrail.emitting = false;
+	//	}
 
-		//fronttrail.emitting = true;
-		//rearttrail.emitting = true;
-	}
-	private void StopEmitTrail() 
-	{
-		fronttrail.emitting = false;
-		rearttrail.emitting = false;
-	}
+	//	//fronttrail.emitting = true;
+	//	//rearttrail.emitting = true;
+	//}
+	//private void StopEmitTrail() 
+	//{
+	//	fronttrail.emitting = false;
+	//	rearttrail.emitting = false;
+	//}
 
 	private void UpdateSingleWheel(WheelCollider wheelCollider, Transform wheelTransform)
 	{
