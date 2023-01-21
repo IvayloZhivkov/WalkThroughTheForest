@@ -85,6 +85,7 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSController\CharController_Motor.cs" />
+    <Compile Include="Assets\Placement.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\UserLutComponent.cs" />
     <Compile Include="Assets\controler.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
@@ -97,8 +98,8 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
-    <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\Flooded_Grounds\Scripts\DisableRenderer.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Scripts\CTI_Utils.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\FogComponent.cs" />
@@ -108,9 +109,10 @@
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
     <Compile Include="Assets\Flooded_Grounds\Scripts\FPSDisplay.cs" />
     <Compile Include="Assets\Bike\BycicleSystem\BicycleVehicle.cs" />
+    <Compile Include="Assets\FollowPlayer.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
     <Compile Include="Assets\Flooded_Grounds\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\Placement.cs" />
+    <Compile Include="Assets\follow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Conifers [BOTD]\Render Pipeline Support\Built-in RP\CTI Runtime Components\Shaders\CTI_LOD_Bark_Array_301.shader" />
@@ -752,9 +754,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Cinemachine.csproj">
+      <Project>{F889A649-FA37-45D9-CA42-AE3961203A0A}</Project>
+      <Name>Cinemachine</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
       <Project>{5A345C20-5A12-15BB-7BB6-FC625B10FC20}</Project>
       <Name>Unity.VSCode.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.unity.cinemachine.editor.csproj">
+      <Project>{3A2E74AD-A12A-EE99-BAF4-7B6EA33AF227}</Project>
+      <Name>com.unity.cinemachine.editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{FBA53CE8-8FA8-D4C1-903D-AFA587182966}</Project>

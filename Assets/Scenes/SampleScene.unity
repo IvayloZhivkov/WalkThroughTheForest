@@ -5814,11 +5814,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: brakeForce
-      value: 25
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: motorforce
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: rearGrounded
@@ -5830,11 +5830,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: layingammount
-      value: -9.7
+      value: -33
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: leanSmoothing
-      value: 0.075
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: turnSmoothing
@@ -5846,15 +5846,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: maxSteeringAngle
-      value: 15
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
+      propertyPath: currentSteeringAngle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695228, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: speedteercontrolTime
-      value: 0.0127
+      value: 0.0249
       objectReference: {fileID: 0}
     - target: {fileID: 4664322994268695230, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: m_Name
       value: FinalBike
+      objectReference: {fileID: 0}
+    - target: {fileID: 4664322994268695231, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
+      propertyPath: m_Mass
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5472104034219470852, guid: b9f42de6425d7a64492e24f3f8462954, type: 3}
       propertyPath: m_RootOrder
@@ -12201,8 +12209,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0.1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
@@ -12299,7 +12307,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664084887}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d8f19a6f0e72fd40bcd839209cd5d1b, type: 3}
   m_Name: 
@@ -12307,7 +12315,7 @@ MonoBehaviour:
   speedh: 2
   speedv: 2
   lookKey: 306
-  entity: {fileID: 1664084889}
+  entity: {fileID: 963194228}
 --- !u!1001 &1682436239
 PrefabInstance:
   m_ObjectHideFlags: 0
